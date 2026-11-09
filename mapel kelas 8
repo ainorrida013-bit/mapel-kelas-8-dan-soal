@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Belajar Kelas 8 – Kurikulum Merdeka</title>
+<style>
+:root{--bg:#f3f6f1;--card:#fff;--ink:#1d2b24;--mut:#5b6b62;--line:#d5ddd6;--acc:#1f6f54;--acc2:#e9f3ee;--ok:#157347;--okbg:#e3f4ea;--bad:#b3261e;--badbg:#fbe9e7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#121915;--card:#1b251f;--ink:#e6efe9;--mut:#9fb0a6;--line:#2c3a32;--acc:#5fcf9f;--acc2:#1f2f27;--ok:#6fdc9d;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1a}}
+:root[data-theme="dark"]{--bg:#121915;--card:#1b251f;--ink:#e6efe9;--mut:#9fb0a6;--line:#2c3a32;--acc:#5fcf9f;--acc2:#1f2f27;--ok:#6fdc9d;--okbg:#17301f;--bad:#ff8a80;--badbg:#3a1d1a}
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.6 Georgia,"Times New Roman",serif}
+h1,h2,h3,button,.tab{font-family:"Trebuchet MS","Segoe UI",system-ui,sans-serif}
+header{padding:28px 18px 8px;max-width:760px;margin:0 auto}
+h1{font-size:1.7rem;line-height:1.2;margin:0 0 6px}
+header p{margin:0;color:var(--mut)}
+.tabs{display:flex;gap:8px;overflow-x:auto;padding:14px 18px;max-width:760px;margin:0 auto;position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);z-index:5}
+.tab{flex:none;border:1px solid var(--line);background:var(--card);color:var(--ink);padding:9px 14px;border-radius:999px;font-size:.92rem;cursor:pointer}
+.tab[aria-selected="true"]{background:var(--acc);color:#fff;border-color:var(--acc)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .tab[aria-selected="true"]{color:#08140e}}
+main{max-width:760px;margin:0 auto;padding:4px 18px 48px}
+h2{font-size:1.3rem;margin:18px 0 10px}
+.mat{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--acc);border-radius:8px;padding:12px 14px;margin-bottom:10px}
+.mat h3{margin:0 0 2px;font-size:1rem}
+.mat p{margin:0;color:var(--mut)}
+.q{background:var(--card);border:1px solid var(--line);border-radius:8px;padding:14px;margin-bottom:12px}
+.q p{margin:0 0 8px;font-weight:600}
+.o{display:flex;gap:10px;align-items:flex-start;padding:8px 10px;border:1px solid var(--line);border-radius:6px;margin-top:6px;cursor:pointer}
+.o input{margin-top:5px;accent-color:var(--acc)}
+.o.ok{background:var(--okbg);border-color:var(--ok)}
+.o.bad{background:var(--badbg);border-color:var(--bad)}
+.ex{margin-top:10px;padding:8px 10px;background:var(--acc2);border-radius:6px;font-size:.92rem}
+.go{border:0;background:var(--acc);color:#fff;padding:12px 22px;border-radius:8px;font-size:1rem;cursor:pointer;margin-right:8px}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .go{color:#08140e}}
+.go.alt{background:transparent;color:var(--ink);border:1px solid var(--line)}
+.score{background:var(--acc2);border:1px solid var(--acc);border-radius:8px;padding:14px;margin:14px 0;font-family:"Trebuchet MS",system-ui,sans-serif}
+.score b{font-size:1.5rem}
+button:focus-visible,.o:focus-within{outline:3px solid var(--acc);outline-offset:2px}
+@property --h{syntax:"<number>";inherits:true;initial-value:155}
+:root{--h:155;--acc:hsl(var(--h) 55% 28%);--acc2:hsl(var(--h) 45% 94%);transition:--h .6s}
+body{background:radial-gradient(circle at 5% -5%,hsl(var(--h) 75% 82% / .7),transparent 42%),radial-gradient(circle at 100% 25%,hsl(calc(var(--h) + 60) 75% 85% / .55),transparent 40%),var(--bg);background-attachment:fixed}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--acc:hsl(var(--h) 60% 64%);--acc2:hsl(var(--h) 22% 17%)}:root:not([data-theme="light"]) body{background:radial-gradient(circle at 5% -5%,hsl(var(--h) 55% 22% / .8),transparent 42%),radial-gradient(circle at 100% 25%,hsl(calc(var(--h) + 60) 50% 20% / .7),transparent 40%),var(--bg);background-attachment:fixed}}
+header{padding:16px 18px 0}
+.hero{position:relative;overflow:hidden;padding:30px 22px 26px;border-radius:22px;color:#fff;background:linear-gradient(135deg,hsl(var(--h) 60% 30%),hsl(calc(var(--h) + 45) 65% 42%));box-shadow:0 18px 40px -22px hsl(var(--h) 60% 20%)}
+.hero>div{position:relative}
+.hero h1{font-size:2.1rem;letter-spacing:-.5px;margin:0 0 6px}
+.hero p{color:#ffffffe0;margin:0 0 14px}
+.hero i{position:absolute;border-radius:50%;background:#fff;opacity:.16;animation:fl 8s ease-in-out infinite}
+.hero b{position:absolute;font:700 1.7rem Georgia,serif;opacity:.3;animation:fl 6s ease-in-out infinite}
+.chip{display:inline-block;margin:0 6px 6px 0;padding:4px 12px;border-radius:99px;background:#ffffff2e;font:.82rem "Trebuchet MS",system-ui,sans-serif}
+.tab{display:inline-flex;align-items:center;gap:6px;transition:transform .2s,box-shadow .2s,background .25s}
+.tab:hover{transform:translateY(-2px)}
+.tab[aria-selected="true"]{box-shadow:0 8px 18px -8px var(--acc)}
+.ic{font-size:1.1rem}
+.ban{display:flex;align-items:center;gap:14px;margin:8px 0 4px}
+.ban .big{font-size:2.2rem;width:66px;height:66px;display:grid;place-items:center;border-radius:20px;background:var(--acc2);border:1px solid var(--line);animation:pop .5s}
+.ban h2{margin:0}.ban p{margin:0;color:var(--mut);font-family:"Trebuchet MS",system-ui,sans-serif;font-size:.9rem}
+.mat,.q{border-radius:14px;transition:transform .2s,box-shadow .2s}
+.mat:hover{transform:translateY(-3px);box-shadow:0 12px 24px -14px var(--acc)}
+.in .mat,.in .q{animation:up .5s both;animation-delay:calc(var(--i)*70ms)}
+.n{display:inline-grid;place-items:center;width:26px;height:26px;margin-right:8px;border-radius:50%;background:var(--acc);color:#fff;font:700 .8rem "Trebuchet MS",system-ui,sans-serif}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]) .n{color:#08140e}}
+.pg{height:8px;border-radius:99px;background:var(--line);overflow:hidden;margin-bottom:14px}
+.pg i{display:block;height:100%;border-radius:99px;background:linear-gradient(90deg,var(--acc),hsl(calc(var(--h) + 45) 70% 55%));transition:width .35s}
+.o{transition:transform .15s,background .2s,border-color .2s}
+.o:hover{transform:translateX(4px);border-color:var(--acc)}
+.o:has(input:checked):not(.ok):not(.bad){border-color:var(--acc);background:var(--acc2)}
+.o.ok{animation:pop .45s}
+.go{box-shadow:0 10px 20px -10px var(--acc);transition:transform .15s}
+.go:hover{transform:translateY(-2px)}.go:active{transform:scale(.97)}
+.score{display:flex;align-items:center;gap:18px;border-radius:16px;animation:pop .5s}
+.ring{width:100px;height:100px;flex:none;transform:rotate(-90deg)}
+.ring circle{fill:none;stroke-width:9}.ring .bg{stroke:var(--line)}
+.ring .fg{stroke:var(--acc);stroke-linecap:round;stroke-dasharray:264;stroke-dashoffset:var(--p);animation:ring 1.1s ease-out}
+.ring text{fill:var(--ink);font:700 28px "Trebuchet MS",system-ui,sans-serif}
+.cf{position:fixed;top:-16px;left:var(--l);width:9px;height:14px;border-radius:2px;pointer-events:none;z-index:50;animation:cf 2.4s ease-in forwards}
+@keyframes fl{0%,100%{transform:translateY(0) rotate(0)}50%{transform:translateY(-14px) rotate(8deg)}}
+@keyframes up{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
+@keyframes pop{0%{transform:scale(.92)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+@keyframes ring{from{stroke-dashoffset:264}}
+@keyframes cf{to{transform:translate(var(--x),108vh) rotate(720deg);opacity:.2}}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<header>
+<div class="hero">
+<i style="width:140px;height:140px;right:-30px;top:-40px"></i><i style="width:70px;height:70px;right:90px;bottom:-20px;animation-delay:-3s"></i>
+<b style="right:26px;top:22px">π</b><b style="right:84px;top:74px;animation-delay:-2s">√</b><b style="right:30px;bottom:18px;animation-delay:-4s">A+</b>
+<div>
+<h1>Belajar Kelas 8</h1>
+<p>Ringkasan materi dan latihan soal ujian</p>
+<span class="chip">Kurikulum Merdeka</span><span class="chip">5 mapel</span><span class="chip">25 soal latihan</span>
+</div>
+</div>
+</header>
+<nav class="tabs" id="tabs" role="tablist" aria-label="Mata pelajaran"></nav>
+<main id="app"></main>
+<script>
+const D=[
+{n:"Matematika",m:[
+["Teorema Pythagoras","Pada segitiga siku-siku berlaku a² + b² = c², dengan c sisi miring (hipotenusa)."],
+["SPLDV","Sistem persamaan linear dua variabel diselesaikan dengan substitusi, eliminasi, atau gabungan keduanya."],
+["Fungsi linear","Bentuk y = mx + c. Gradien m menunjukkan kemiringan garis."],
+["Lingkaran","Keliling = 2πr, luas = πr². Gunakan π = 22/7 atau 3,14."],
+["Bangun ruang sisi datar","Volume kubus = s³, volume balok = p × l × t."]],
+q:[
+["Sisi siku-siku sebuah segitiga adalah 6 cm dan 8 cm. Panjang sisi miringnya …",["7 cm","10 cm","12 cm","14 cm"],1,"6² + 8² = 36 + 64 = 100, sehingga c = 10 cm."],
+["Jika x + y = 7 dan x − y = 1, maka nilai x adalah …",["3","4","5","6"],1,"Jumlahkan kedua persamaan: 2x = 8, jadi x = 4."],
+["Gradien garis y = 3x − 5 adalah …",["−5","1/3","3","5"],2,"Pada y = mx + c, gradien m = 3."],
+["Keliling lingkaran berjari-jari 7 cm (π = 22/7) adalah …",["22 cm","44 cm","49 cm","154 cm"],1,"K = 2 × 22/7 × 7 = 44 cm."],
+["Volume kubus dengan rusuk 5 cm adalah …",["25 cm³","100 cm³","125 cm³","150 cm³"],2,"V = 5³ = 125 cm³."]]},
+{n:"IPA",m:[
+["Gaya dan gerak","Gaya diukur dalam newton (N). Hukum Newton menjelaskan hubungan gaya, massa, dan percepatan."],
+["Usaha dan energi","Usaha W = F × s. Energi tidak dapat dimusnahkan, hanya berubah bentuk."],
+["Tekanan","Tekanan P = F / A. Makin kecil luas bidang tekan, makin besar tekanannya."],
+["Sistem pencernaan","Penyerapan sari makanan terjadi terutama di usus halus."],
+["Sistem peredaran darah","Sel darah merah (eritrosit) mengangkut oksigen ke seluruh tubuh."]],
+q:[
+["Satuan gaya dalam SI adalah …",["Joule","Watt","Newton","Pascal"],2,"Satuan gaya adalah newton (N)."],
+["Rumus usaha yang benar adalah …",["W = F × s","W = F / s","W = m × g","W = P × A"],0,"Usaha sama dengan gaya dikali perpindahan."],
+["Gaya 100 N bekerja pada bidang seluas 2 m². Tekanannya …",["25 Pa","50 Pa","100 Pa","200 Pa"],1,"P = 100 / 2 = 50 Pa."],
+["Penyerapan sari makanan terjadi di …",["Lambung","Kerongkongan","Usus besar","Usus halus"],3,"Dinding usus halus punya vili yang menyerap nutrisi."],
+["Fungsi utama sel darah merah adalah …",["Melawan kuman","Mengangkut oksigen","Membekukan darah","Mencerna makanan"],1,"Hemoglobin pada eritrosit mengikat oksigen."]]},
+{n:"IPS",m:[
+["Interaksi sosial","Bentuk asosiatif: kerja sama, akomodasi, asimilasi. Bentuk disosiatif: persaingan, kontravensi, pertentangan."],
+["Kerajaan Hindu-Buddha","Kutai di Kalimantan Timur adalah kerajaan Hindu tertua di Indonesia (abad ke-4)."],
+["Kolonialisme","VOC berdiri tahun 1602. Tanam paksa diterapkan pada masa Gubernur Jenderal Van den Bosch."],
+["Mobilitas penduduk","Urbanisasi adalah perpindahan penduduk dari desa ke kota."]],
+q:[
+["Kerajaan Hindu tertua di Indonesia adalah …",["Tarumanegara","Kutai","Sriwijaya","Majapahit"],1,"Prasasti Yupa menjadi bukti keberadaan Kutai."],
+["Contoh interaksi sosial asosiatif adalah …",["Persaingan","Pertentangan","Kerja sama","Kontravensi"],2,"Kerja sama membuat hubungan antarkelompok makin erat."],
+["VOC didirikan pada tahun …",["1596","1602","1799","1830"],1,"VOC berdiri pada 1602 dan bubar pada 1799."],
+["Sistem tanam paksa dicetuskan oleh …",["Daendels","Raffles","Van den Bosch","Cornelis de Houtman"],2,"Johannes van den Bosch menerapkannya mulai 1830."],
+["Perpindahan penduduk dari desa ke kota disebut …",["Transmigrasi","Urbanisasi","Emigrasi","Remigrasi"],1,"Urbanisasi didorong oleh faktor ekonomi dan pendidikan."]]},
+{n:"B. Indonesia",m:[
+["Teks prosedur","Berisi langkah-langkah melakukan sesuatu secara berurutan."],
+["Teks eksposisi","Struktur: tesis, argumentasi, penegasan ulang."],
+["Majas","Simile membandingkan dua hal secara langsung memakai kata seperti, bagai, atau laksana."],
+["Paragraf","Gagasan pokok adalah ide utama yang dijelaskan oleh kalimat-kalimat penjelas."]],
+q:[
+["Teks prosedur berisi …",["Pendapat penulis","Langkah-langkah melakukan sesuatu","Cerita masa lalu","Deskripsi tempat"],1,"Teks prosedur menjelaskan cara membuat atau melakukan sesuatu."],
+["Struktur teks eksposisi yang benar adalah …",["Orientasi, komplikasi, resolusi","Tesis, argumentasi, penegasan ulang","Tujuan, bahan, langkah","Identifikasi, deskripsi"],1,"Eksposisi diawali tesis dan ditutup penegasan ulang."],
+["“Suaranya merdu seperti buluh perindu.” Majas pada kalimat itu adalah …",["Metafora","Hiperbola","Personifikasi","Simile"],3,"Ada kata pembanding “seperti”, jadi simile."],
+["Antonim kata “rajin” adalah …",["Tekun","Giat","Malas","Ulet"],2,"Lawan kata rajin adalah malas."],
+["Ide utama sebuah paragraf disebut …",["Kalimat penjelas","Gagasan pokok","Judul","Simpulan"],1,"Gagasan pokok biasanya ada di kalimat utama."]]},
+{n:"B. Inggris",m:[
+["Simple present","Untuk kebiasaan dan fakta. Subjek he/she/it memakai verb + s: she goes."],
+["Simple past","Untuk kejadian yang sudah selesai. Contoh: I bought a book yesterday."],
+["Present continuous","Rumus: am/is/are + verb-ing, untuk kegiatan yang sedang berlangsung."],
+["Descriptive text","Tujuan: menggambarkan orang, tempat, atau benda."]],
+q:[
+["She ___ to school every day.",["go","goes","going","gone"],1,"Subjek she memakai verb + es: goes."],
+["Yesterday, I ___ a new book.",["buy","buys","bought","buying"],2,"Yesterday menandakan simple past: bought."],
+["“They are playing football.” Kalimat ini memakai tense …",["Simple present","Simple past","Present continuous","Future"],2,"Are + verb-ing adalah present continuous."],
+["The purpose of a descriptive text is to …",["Tell a past event","Describe a person, place, or thing","Give instructions","Persuade readers"],1,"Descriptive text menggambarkan sesuatu."],
+["The opposite of “big” is …",["Large","Tall","Small","Huge"],2,"Antonim big adalah small."]]}
+];
+const L=["A","B","C","D"],IC=["📐","🔬","🌏","📖","🔤"],H=[215,160,28,345,270];
+function confetti(){if(matchMedia("(prefers-reduced-motion:reduce)").matches)return;const c=["#e8590c","#2f9e44","#1c7ed6","#f59f00","#d6336c"];for(let i=0;i<46;i++){const s=document.createElement("span");s.className="cf";s.style.cssText="--l:"+Math.random()*100+"vw;--x:"+(Math.random()*160-80)+"px;background:"+c[i%5]+";animation-delay:"+Math.random()*.5+"s";document.body.appendChild(s);setTimeout(()=>s.remove(),3200)}}
+let cur=0,done=false,ans={};
+const tabs=document.getElementById("tabs"),app=document.getElementById("app");
+function renderTabs(){tabs.innerHTML="";D.forEach((d,i)=>{const b=document.createElement("button");b.className="tab";b.type="button";b.role="tab";b.innerHTML='<span class="ic">'+IC[i]+"</span>"+d.n;b.setAttribute("aria-selected",i===cur);b.onclick=()=>{cur=i;done=false;ans={};render()};tabs.appendChild(b)})}
+function render(f){
+document.documentElement.style.setProperty("--h",H[cur]);renderTabs();const d=D[cur];
+let h='<div class="ban"><span class="big">'+IC[cur]+"</span><div><h2>"+d.n+"</h2><p>Kelas 8 · "+d.m.length+" materi · "+d.q.length+" soal</p></div></div><h2>Ringkasan materi</h2>";
+d.m.forEach((m,k)=>{h+='<div class="mat" style="--i:'+k+'"><h3>'+m[0]+"</h3><p>"+m[1]+"</p></div>"});
+h+='<h2>Soal ujian</h2><div class="pg"><i id="pgb" style="width:'+Object.keys(ans).length/d.q.length*100+'%"></i></div>';
+d.q.forEach((q,i)=>{
+h+='<div class="q" style="--i:'+(i+3)+'"><p><span class="n">'+(i+1)+"</span>"+q[0]+"</p>";
+q[1].forEach((o,j)=>{
+let c="o";if(done){if(j===q[2])c+=" ok";else if(ans[i]===j)c+=" bad"}
+h+='<label class="'+c+'"><input type="radio" name="q'+i+'" value="'+j+'"'+(ans[i]===j?" checked":"")+(done?" disabled":"")+"><span>"+L[j]+". "+o+"</span></label>"});
+if(done)h+='<div class="ex"><b>Pembahasan:</b> '+q[3]+"</div>";
+h+="</div>"});
+if(done){let s=d.q.filter((q,i)=>ans[i]===q[2]).length;
+let p=Math.round(s/d.q.length*100);
+h+='<div class="score"><svg class="ring" viewBox="0 0 100 100"><circle class="bg" cx="50" cy="50" r="42"/><circle class="fg" cx="50" cy="50" r="42" style="--p:'+264*(1-p/100)+'"/><text x="50" y="50" transform="rotate(90 50 50)" text-anchor="middle" dominant-baseline="central">'+p+"</text></svg><div><b>"+(p>=80?"Mantap, hasilmu bagus!":p>=60?"Sudah bagus, tinggal sedikit lagi.":"Ayo pelajari materinya sekali lagi.")+"</b><br>"+s+" benar dari "+d.q.length+" soal</div></div>";
+h+='<button class="go alt" type="button" id="re">Ulangi ujian</button>'}
+else h+='<button class="go" type="button" id="sub">Periksa jawaban</button>';
+app.innerHTML=h;app.className=f?"":"in";
+app.querySelectorAll("input[type=radio]").forEach(r=>r.onchange=e=>{ans[+e.target.name.slice(1)]=+e.target.value;const g=document.getElementById("pgb");if(g)g.style.width=Object.keys(ans).length/d.q.length*100+"%"});
+const s=document.getElementById("sub");if(s)s.onclick=()=>{
+const miss=d.q.length-Object.keys(ans).length;
+if(miss>0&&!confirm("Masih ada "+miss+" soal belum dijawab. Tetap periksa?"))return;
+const sc=d.q.filter((q,i)=>ans[i]===q[2]).length/d.q.length;done=true;render(1);window.scrollTo({top:document.querySelector(".score").offsetTop-120,behavior:"smooth"});if(sc>=.8)confetti()};
+const r=document.getElementById("re");if(r)r.onclick=()=>{done=false;ans={};render();window.scrollTo({top:0})}}
+render();
+</script>
+</body>
+</html>
